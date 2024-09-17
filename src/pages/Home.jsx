@@ -16,7 +16,7 @@ function Home() {
   return (
     <div>
       <Header />
-      <Banner imageSrc={bannerImage} text="Chez vous, partout et ailleurs" />
+      <Banner imageSrc={bannerImage} text="Chez vous, partout et ailleurs !" />
       <div className="p-0 md:p-10 lg:p-10 mx-10 md:mx-20 lg:mx-36 mt-10 mb-4 rounded-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 bg-transparent md:bg-custom-grey">
         {logementsData.slice(0, visibleLogements).map((logement) => (
           <Card key={logement.id} logement={logement} />
