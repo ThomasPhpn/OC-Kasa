@@ -24,7 +24,7 @@ function LogementDetails({ location }) {
         </div>
         <div className="host-ratings-container flex flex-row-reverse md:flex-col lg:flex-col justify-between md:justify-center items-center">
           <div className="flex flex-row justify-start items-center gap-6">
-            <p className="text-custom-red md:text-right">
+            <p className="text-custom-red md:text-right font-semibold">
               {location.host.name}
             </p>
             <img

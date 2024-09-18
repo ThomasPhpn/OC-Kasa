@@ -17,7 +17,7 @@ function Header({
       </div>
 
       <nav>
-        <ul className="flex space-x-6 gap- font-semibold">
+        <ul className="flex space-x-6 font-semibold">
           {navLinks.map((link, index) => (
             <li key={index} className="uppercase lg:normal-case">
               <Link to={link.path} className="text-black">
