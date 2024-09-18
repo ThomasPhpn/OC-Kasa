@@ -1,7 +1,6 @@
 import Dropdown from "./Dropdown";
 
 function LogementDetails({ location }) {
-  console.log(location.equipments);
   return (
     <div className="locaation-details-container mx-10 md:mx-20 lg:mx-36 pb-10">
       <div className="title-tag-host-container flex flex-col md:flex-row lg:flex-row justify-start md:justify-between pb-3">

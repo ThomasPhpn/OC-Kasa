@@ -10,7 +10,7 @@ function Dropdown({ title, content, className }) {
 
   return (
     <div className={`dropdown-item ${className}`}>
-      <div className="title flex flex-row bg-custom-red justify-between items-center h-8 rounded-md">
+      <div className="title flex flex-row bg-custom-red justify-between items-center h-12 rounded-xl">
         <h3 className="ml-4 text-white font-semibold">{title}</h3>
         <img
           src={fleche}

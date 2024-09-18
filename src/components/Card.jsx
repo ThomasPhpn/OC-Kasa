@@ -5,17 +5,17 @@ function handleCardClick(id) {
 function Card({ logement }) {
   const cardId = logement.id;
   return (
-    <div onClick={() => handleCardClick(cardId)} 
-    className="rounded-xl relative cursor-pointer">
+    <div
+      onClick={() => handleCardClick(cardId)}
+      className="rounded-xl relative cursor-pointer"
+    >
       <img
         src={logement.cover}
         alt={logement.title}
-        className="rounded-lg object-cover min-h-[200px]"
+        className="rounded-lg object-cover min-h-[200px] h-full w-full"
       />
-      <div className="absolute bottom-0 left-0 w-full h-1/4 md:h-1/3 rounded-b-lg flex justify-between items-center bg-custom-red">
-        <h3 className="text-white text-sm font-semibold p-5 w-full">
-          {logement.title}
-        </h3>
+      <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-3">
+        <h3 className="text-white text-sm font-semibold">{logement.title}</h3>
       </div>
     </div>
   );
