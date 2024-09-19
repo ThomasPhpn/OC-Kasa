@@ -1,3 +1,5 @@
+import React from "react";
+
 function handleCardClick(id) {
   window.location.href = `/logement/${id}`;
 }
@@ -7,7 +9,7 @@ function Card({ logement }) {
   return (
     <div
       onClick={() => handleCardClick(cardId)}
-      className="rounded-xl relative cursor-pointer"
+      className="rounded-xl relative cursor-pointer max-w-[687px]"
     >
       <img
         src={logement.cover}
