@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = ({ imageSrc, text }) => {
   return (
-    <div className="relative mx-10 md:mx-20 lg:mx-36 h-36 my-10">
+    <div className="relative mx-10 md:mx-20 lg:mx-36 h-36 mt-6 mb-10">
       <img
         src={imageSrc}
         alt={text}

@@ -16,8 +16,10 @@ function Card({ logement }) {
         alt={logement.title}
         className="rounded-lg object-cover min-h-[200px] h-full w-full"
       />
-      <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-3">
-        <h3 className="text-white text-sm font-semibold">{logement.title}</h3>
+      <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/90 to-transparent p-3 flex items-end">
+        <h3 className="text-white text-sm font-semibold pb-3">
+          {logement.title}
+        </h3>
       </div>
     </div>
   );

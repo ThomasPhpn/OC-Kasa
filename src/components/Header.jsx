@@ -9,7 +9,7 @@ function Header({
   ],
 }) {
   return (
-    <header className="px-10 md:px-20 lg:px-36 pt-8 flex justify-between items-center bg-white">
+    <header className="px-10 md:px-20 lg:px-36 py-8 flex justify-between items-center bg-white">
       <div className="logo">
         <Link to="/">
           <img src={logo} alt="Kasa logo" className="h-10" />

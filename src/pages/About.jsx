@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import Image from "../assets/banner-about.jpg";
 import Dropdown from "../components/Dropdown";
@@ -16,7 +15,6 @@ function About() {
           <Dropdown key={index} title={item.title} content={item.content} />
         ))}
       </div>
-      <Footer />
     </div>
   );
 }

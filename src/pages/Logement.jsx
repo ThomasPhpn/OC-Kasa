@@ -3,7 +3,6 @@ import { useParams, Navigate } from "react-router-dom";
 import Header from "../components/Header";
 import Gallery from "../components/Gallery";
 import LogementDetails from "../components/LogementDetails";
-import Footer from "../components/Footer";
 import logementsData from "../data/logements.json";
 
 function Logement() {
@@ -16,7 +15,6 @@ function Logement() {
       <Header />
       <Gallery location={logement} />
       <LogementDetails location={logement} />
-      <Footer />
     </div>
   ) : (
     <Navigate to="/notfound" />
