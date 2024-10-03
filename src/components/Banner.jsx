@@ -6,9 +6,9 @@ const Banner = ({ imageSrc, text }) => {
       <img
         src={imageSrc}
         alt={text}
-        className="w-full h-full object-cover rounded-lg shadow-lg"
+        className="w-full h-full object-cover rounded-2xl shadow-lg"
       />
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center rounded-lg">
+      <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center rounded-2xl">
         <h1 className="text-2xl font-bold px-3 text-white">{text}</h1>
       </div>
     </div>

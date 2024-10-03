@@ -22,7 +22,7 @@ function Dropdown({ title, content, className }) {
         />
       </div>
       {isVisible && (
-        <div className="text-content bg-custom-grey text-content mb-4 p-4 text-sm text-justify">
+        <div className=" bg-custom-grey mb-4 p-4 text-sm text-justify">
           <p>{content}</p>
         </div>
       )}
