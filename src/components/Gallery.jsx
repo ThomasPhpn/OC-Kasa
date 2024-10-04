@@ -39,6 +39,9 @@ function Gallery({ location }) {
             onClick={nextSlide}
             className="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer"
           />
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-lg  px-2 py-1 rounded-md">
+            {currentIndex + 1}/{slides.length}
+          </div>
         </>
       )}
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 function Header({
@@ -8,8 +8,6 @@ function Header({
     { label: "À propos", path: "/a-propos" },
   ],
 }) {
-  const location = useLocation();
-  console.log(location);
   return (
     <header className="px-10 md:px-20 lg:px-36 py-8 flex justify-between items-center bg-white">
       <div className="logo">
@@ -22,14 +20,14 @@ function Header({
         <ul className="flex space-x-6 font-semibold">
           {navLinks.map((link, index) => (
             <li key={index} className="uppercase lg:normal-case">
-              <Link
+              <NavLink
                 to={link.path}
-                className={`text-black ${
-                  location.pathname === link.path ? "underline" : ""
-                }`}
+                className={({ isActive }) =>
+                  `text-black ${isActive ? "underline" : ""}`
+                }
               >
                 {link.label}
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>

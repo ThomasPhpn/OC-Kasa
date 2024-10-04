@@ -23,9 +23,9 @@ function Home() {
       </div>
       {visibleLogements < logementsData.length && (
         <div onClick={handleButtonClick} className="flex justify-center mb-4">
-          {/* <button className="text-custom-red underline font-semibold p-2 text-sm">
+          <button className="text-custom-red underline font-semibold p-2 text-sm">
             Afficher plus
-          </button> */}
+          </button>
         </div>
       )}
     </div>
